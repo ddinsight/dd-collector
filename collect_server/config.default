@@ -1,0 +1,13 @@
+[main]
+bind = 0.0.0.0
+port = 8008
+environment = production
+
+[td-agent]
+host = localhost
+port = 8888
+
+[log]
+name = ddcollector
+level = INFO
+file = log/ddcollector.log
