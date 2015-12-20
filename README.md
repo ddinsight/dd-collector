@@ -5,6 +5,7 @@ dd-collector
 dd-collector is the logging part of **DD Insight**, which consists of two sub projects; [**mobile SDK**](http://github.com/ddinsight/dd-collector/tree/master/mobilesdk) to deliver information from mobile devices to a server and [**collect server**](http://github.com/ddinsight/dd-collector/tree/master/collect_server) to receive/save the logs securely in server-side.
 
 ----------
+## 
 
 Mobile SDK
 ---
@@ -107,6 +108,8 @@ Mobile SDK
 
 ----------
 
+## 
+
 Collect Server
 ---
 
@@ -130,6 +133,7 @@ Collect Server
 > The minimum log fields that are required to execute netview demonstration in the DD Insight open-source project are listed in the  [Sample Mobile Log Format](https://github.com/ddinsight/dd-collector/blob/master/SAMPLE-DATA-FORMAT.md) page
 
 ### 
+### 
 
 ----------
 
@@ -139,6 +143,8 @@ Collect Server
 > - Spring Choi (collect server)
 > - Kwangju Lee (collect_server)
 > - [See recent contributors on Github](https://github.com/ddinsight/dd-collector/graphs/contributors)
+
+---
 
 ### 
 ### **License**
