@@ -131,15 +131,17 @@ Collect Server
 
 ### 
 
-----------  
-**Authors & Contributors**
+----------
+
+###   
+###  **Authors & Contributors**
 > - Daniel Moon (mobile SDK, collect_server)
 > - Spring Choi (collect server)
 > - Kwangju Lee (collect_server)
 > - [See recent contributors on Github](https://github.com/ddinsight/dd-collector/graphs/contributors)
 
 ### 
-**License**
+### **License**
 > dd-collector is released under [Apache v2 License](http://)
 
  --- 
