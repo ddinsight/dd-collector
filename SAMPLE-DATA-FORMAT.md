@@ -5,7 +5,7 @@
 >- to be sent by HTTP/GET URL or HTTP/POST body
 >- mobileHeader1=value&mobileHeader2=value&...&eData=*JSON-formatted-text*
 
------
+---
 #### **Part I of eData - required for analytics with  live video**
 
 Field name | Value | Remarks
@@ -23,7 +23,7 @@ playPreparingTime | 10.355 | initial start-up time of the video session reported
 playServiceMode | 2 | the type of the application session (2=live video)
 playSessionId | 16fc8d0e09644732_1440392276384 | unique session ID of the video session reported (androidID_timestamp) 
 
------
+---
 #### **Part II of eData - filled with fixed or arbitrary values for tests**
 - *The following fields are not necessary for analytics but recommended to set to the fixed values for smooth tests (for now)*
 - *These fields shall be modified or deleted in the future upgrade*
@@ -43,7 +43,7 @@ playTitle | TestVideo | set to strings (for the video title) for tests
 tkcode | 432526523 | set to an ID number (for tracking code) for tests
 
 
------
+---
 #### **Mobile Headers** 
 
 - *These fields are filled automatically by the function call*
@@ -73,5 +73,5 @@ vID | 14478165022109379694 | unique visitor id (timestamp + random)
 ver | 2.0.3 | version of the mobileSDK
 verCode | 1 | version code from the parent app package
 
------
+---
 Copyright 2015 AirPlug Inc.
