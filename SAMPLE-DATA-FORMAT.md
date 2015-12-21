@@ -1,9 +1,9 @@
 ## Sample Mobile Log Format
 
 #### **Basic data format**
-> Client-side data needed for analytics are sent in the URL query string format
->- to be sent by HTTP/GET URL or HTTP/POST body
->- mobileHeader1=value&mobileHeader2=value&...&eData=*JSON-formatted-text*
+Client-side data needed for analytics are sent in the URL query string format
+- to be sent by HTTP/GET URL or HTTP/POST body
+- mobileHeader1=value&mobileHeader2=value&...&eData=*JSON-formatted-text*
 
 ---
 #### **Part I of eData - required for analytics with  live video**
