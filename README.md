@@ -140,10 +140,13 @@ Collect Server
 ----------
 
 ###   
-#####  **Authors & Contributors**
-> - Daniel Moon (mobile SDK, collect_server)
+#####  **Authors**
 > - Spring Choi (collect server)
 > - Kwangju Lee (collect_server)
+> - Daniel Moon (mobile SDK, collect_server)
+
+###   
+#####  **Contributors**
 > - [See recent contributors on Github](https://github.com/ddinsight/dd-collector/graphs/contributors)
 
 ### 
