@@ -2,19 +2,19 @@
 
 #### **Basic data format**
 Client-side data needed for analytics are sent in the URL query string format
-- to be sent by HTTP/GET URL or HTTP/POST body
+- HTTP/GET URL or HTTP/POST body are used for the query
 - mobileHeader1=value&mobileHeader2=value&...&eData=*JSON-formatted-text*
 
 ---
-#### **Part I of eData - required for analytics with  live video**
+#### **Part I of eData - required for analytics of live video data**
 
 Field name | Value | Remarks
 ---------- | ----- | ----------
 confOperator | 45005 | MCC (3-digits) & MNC (2-digits)
-liveCurrentTSBitrate | 2233 | bitrate in kbps of the live video
+liveCurrentTSBitrate | 2233 | bitrate of the live video in kbps 
 netActiveNetwork | 1440392367\|C\|Mobile | timestamp \| network-status \| network-type (\| ssid \| bssid \| ip added for Wi-Fi)
 netCID | 5782075 | cellular ID (from android API)
-netCellState | 0 | decimal converted value of 3-digit binary flag for cellular availability of the device (data-not-allowed(1<<2) \| airplane-mode-on(1<<1) \| no-SIM-card(1) etc)
+netCellState | 0 | The decimal value of 3-digit binary flag indicating reasons for cellular unavailability of the device. (data-not-allowed(1<<2) \| airplane-mode-on(1<<1) \| no-SIM-card(1) etc)
 netLAC | 5633 | location area code (from android API)
 playAccBufferingTime | 24 | accumulated stalled time for the video session reported (sec)
 playAppPackageName | com.example.tv/01.02.34/10234 | the package name of the app which the mobileSDK is integrated into
@@ -30,17 +30,17 @@ playSessionId | 16fc8d0e09644732_1440392276384 | unique session ID of the video 
 
 Field name | Value | Remarks
 ---------- | ----- | ----------------
-agentLogEndTime	| 1440392367 | set the UNIX timestamp at log-ending (or set to an arbitrary value for tests)
-agentLogStartTime	| 1440392367 | set the UNIX timestamp at log-starting (or set to an arbitrary value for tests)
-agentAatOnOff | TRUE | set to TRUE for tests
-agentLogType	 | 1  | set to 1 for tests
-bbCount    | 0 | set to 0 for tests
-bbList      |[]| set to null for tests
-playContentId | video_0.0.0.0@testvideo.m3u8 |  set to an ID strings for tests
-playHost | DD | set to an ID strings (for DD-agent type) for tests
-playOrigin | 0.0.0.0 | set to an IP address (of the video origin) for tests
-playTitle | TestVideo | set to strings (for the video title) for tests
-tkcode | 432526523 | set to an ID number (for tracking code) for tests
+agentLogEndTime	| 1440392367 | set UNIX timestamps at the end of logs (or set to an arbitrary value for test)
+agentLogStartTime	| 1440392367 | set UNIX timestamp at the start of logs (or set to an arbitrary value for test)
+agentAatOnOff | TRUE | set to TRUE for test
+agentLogType	 | 1  | set to 1 for test
+bbCount    | 0 | set to 0 for test
+bbList      |[]| set to null for test
+playContentId | video_0.0.0.0@testvideo.m3u8 |  set to ID string for test
+playHost | DD | set to ID string (for DD-agent type) for test
+playOrigin | 0.0.0.0 | set to IP address (of the video origin) for test
+playTitle | TestVideo | set to string (for the video title) for test
+tkcode | 432526523 | set to ID number (for tracking code) for test
 
 
 ---
@@ -58,13 +58,13 @@ model | NexusX | android device model
 ntype   | 0   | network type at logging (0=mobile)
 numTotalHits | 1000 | the number of total logging hits since the initialization of the library 
 osType | A | OS type and A = Android
-osVer | 6.0.1 | android os version
+osVer | 6.0.1 | android OS version
 mcc | 450 | MCC (mobile country code)
 mnc | 05 | MNC (mobile network code)
 cid | 5782075 | cell id
 lac | 5633 | LAC (location area code)
-pkgName | com.example.app | the name of the pakage which the collector library integrated into
-pwf.rssi | -100 | Wi-Fi singal strength if available
+pkgName | com.example.app | the name of the package which the collector library is integrated into
+pwf.rssi | -100 | Wi-Fi signal strength if available
 pwf.ssid | APNET | Wi-Fi SSID if available
 pwf.bssid | 00:00:00:00:00 | Wi-Fi BSSID if available
 sID | 1447816502 | session id of mobile tracking
