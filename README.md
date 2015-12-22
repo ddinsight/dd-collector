@@ -147,7 +147,7 @@ Collect Server
 
 ###   
 #####  **Contributors**
-> - [See recent contributors on Github](https://github.com/ddinsight/dd-collector/graphs/contributors)
+> - [See contributors on Github](https://github.com/ddinsight/dd-collector/graphs/contributors)
 
 ### 
 ##### **License**
