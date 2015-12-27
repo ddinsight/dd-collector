@@ -40,7 +40,7 @@ public class NetworkDispatcher implements Dispatcher
   public static final int MAX_GET_LENGTH = 4096;
   public static final int MAX_POST_LENGTH = 8192;
   private final static String TAG = NetworkDispatcher.class.getName();
-  private final static String AP_ANALYTICS_HOST_NAME = "dfront.airplug.com";
+  private final static String AP_ANALYTICS_HOST_NAME = "logserver.example.com";
   private final static int AP_ANALYTICS_HOST_PORT = 80;
   private static final String USER_AGENT_TEMPLATE = "%s/%s (Linux; U; Android %s; %s-%s; %s Build/%s)";
   private static final int MAX_EVENTS_PER_PIPELINE = 30;

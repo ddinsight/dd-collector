@@ -247,7 +247,7 @@ public class AirplugAnalyticTracker {
      * @param period    APAT dispatch period.  >0 일 경우 local sqlite DB가 비워질때까지 설정한 주기값으로 dispatch 실행, <0 경우 period 모드로 동작하지 않음
      * @param enc       이벤트 암호화 여부
      * @param context   안드로이드 컨텍스트
-     * @param host      이벤트를 전송할 서버 호스트 정보 (ex: dfront.airplug.com)
+     * @param host      이벤트를 전송할 서버 호스트 정보 (ex: logserver.example.com)
      * @param port      이벤트를 전송할 서버 포트 정보 (ex: 80)
      */
     public void start(String accountID, String pkgVer, int period, boolean enc, Context context, String host, int port) {
@@ -629,7 +629,7 @@ public class AirplugAnalyticTracker {
     /**
      * APAT가 멀티 앱 패키지와 연동할 경우 특정 바인딩된 패캐지에서 발생한 이벤트 로그 수집을 위한 trackXXX 함수 제공
      *
-     * @param bindPkgName APAT가 바인딩된 패키지 이름 (ex: com.airplug.hoppin)
+     * @param bindPkgName APAT가 바인딩된 패키지 이름 (ex: com.airplug.apppkg)
      * @param logType LogType(enum)
      * @param evtKey event key
      * @param evtVal event value
@@ -669,7 +669,7 @@ public class AirplugAnalyticTracker {
 
     /**
      *
-     * @param bindPkgName APAT가 바인딩된 패키지 이름 (ex: com.airplug.hoppin)
+     * @param bindPkgName APAT가 바인딩된 패키지 이름 (ex: com.airplug.app)
      * @param logType LogType(enum)
      * @param eData 이벤트 로그 정보
      * @param key event key

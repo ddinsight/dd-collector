@@ -29,7 +29,7 @@ public class NewAPATActivity extends Activity{
 		tracker = AirplugAnalyticTracker.getInstance();
 
 		// start
-        tracker.start("apman@airplug.com", "1001", -1, false, this, "dfront.airplug.com", 80, false);
+        tracker.start("apman@airplug.com", "1001", -1, false, this, "logserver.example.com", 80, false);
     }
 
     void initComponent(){
